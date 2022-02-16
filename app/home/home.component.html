@@ -1,0 +1,22 @@
+<div class="loader" *ngIf="schedule == null">
+    <h1>Loading, please wait</h1>
+</div>
+
+<table *ngIf="schedule != null">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Misson</th>
+            <th>Rocket</th>
+            <th>Launch Site</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr (click)="go(i);" *ngFor="let s of schedule; index as i">
+            <td>{{s.date}}</td>
+            <td>{{s.mission}}</td>
+            <td>{{s.rocket}}</td>
+            <td>{{s.site}}</td>
+        </tr>
+    </tbody>
+</table>

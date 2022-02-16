@@ -1,0 +1,68 @@
+button {
+    border:none;
+    border:collapse;
+    border-radius:.75em;
+    padding:1em;
+    font-size:1.5em;
+    color:#fff;
+    background-color:#1BAFDB;
+    cursor:pointer;
+}
+
+table {
+    font-size:1.2em;
+    padding:0.3em;
+    border-collapse: collapse;
+    border-spacing:0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom:2em;
+}
+
+thead tr {
+    color:#1BAFDB;
+    background-color: #ffffff;
+    text-align: left;
+}
+thead th {
+    text-align:left;
+    font-size:1.5em;
+    font-weight:normal;
+    padding:0.3em;
+}
+tbody tr {
+    color:#777;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+tbody tr:hover {
+    background-color:#2ecc71;
+    color: #ffffff;
+    cursor:pointer;
+}
+td {
+    padding:0.5em;
+    margin:0px;
+    font-size:.9em;
+}
+
+.loader {
+    padding: 20px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -50px;
+    margin-left: -300px;
+    height:100px;
+    width:600px;
+    text-align:center;
+    animation: fadeIn 2s infinite alternate;
+}
+.loader h1 { 
+    font-size:3em;
+    color:#1BAFDB;
+}
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+}
+

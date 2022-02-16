@@ -1,0 +1,20 @@
+.container {
+    display:flex;
+    justify-content:center;
+}
+header {
+    font-size:5em;
+    color:#1BAFDB;
+    min-height:10vh;
+    display:flex;
+    justify-content:center;
+    font-family:Impact, Helvetica, sans-serif;
+    margin-bottom:.3em;
+}
+span {
+    display:flex;
+    justify-content:center;
+    margin-bottom:1em;
+    color:#777;
+}
+
