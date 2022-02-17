@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
     constructor(private launchService: LaunchService, private router: Router) { }
 
     public schedule: Launch[] = null;
+    public searchFilter: string = '';
+    public query: string = '';
 
     ngOnInit(): void {
         this.launchService.getSchedule().subscribe(
@@ -22,8 +24,7 @@ export class HomeComponent implements OnInit {
         );
     }
 
-    go(index:number): void {
-        let data = this.schedule[index];
+    go(data): void {
         this.router.navigate(['planned-launch'], {
             state: data 
         });

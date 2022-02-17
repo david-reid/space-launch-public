@@ -2,6 +2,9 @@
     <h1>Loading, please wait</h1>
 </div>
 
+<div class="search-bar">
+    <input type="text" placeholder="Search" [(ngModel)]="query" id="listSearch"/>
+</div>
 <table *ngIf="schedule != null">
     <thead>
         <tr>
@@ -12,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr (click)="go(i);" *ngFor="let s of schedule; index as i">
+        <tr (click)="go(s);" *ngFor="let s of schedule | searchFilter : query; index as i">
             <td>{{s.date}}</td>
             <td>{{s.mission}}</td>
             <td>{{s.rocket}}</td>

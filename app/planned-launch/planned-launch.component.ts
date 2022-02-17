@@ -16,7 +16,6 @@ export class PlannedLaunchComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        console.log(this.launch);
     }
 
     back() {
