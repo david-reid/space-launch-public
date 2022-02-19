@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
 
     go(data): void {
         this.router.navigate(['planned-launch'], {
-            state: data 
+            state: data
         });
     }
 }

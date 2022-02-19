@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PlannedLaunchComponent } from './planned-launch/planned-launch.component';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SearchFilterPipe } from './pipes/search-filter.pipe';
       HomeComponent,
       PlannedLaunchComponent,
       SearchFilterPipe,
+      MapComponent,
   ],
   imports: [
       BrowserModule,

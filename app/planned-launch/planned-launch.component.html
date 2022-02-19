@@ -14,7 +14,10 @@
     </div>
     <div class="field">
         <label>Launch site:&nbsp;</label>
-        <span>{{launch.site}}</span>
+        <h2>{{launch.site}}</h2>
+    </div>
+    <div>
+        <app-map location="{{ launch.site }}"></app-map>
     </div>
     <button (click)="back();">Back</button>
 

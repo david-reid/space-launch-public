@@ -14,6 +14,7 @@ div.card {
     padding:1em;
     width:50vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom:2em;
 }
 div.field {
     margin-bottom:1.5em;
